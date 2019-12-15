@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_yRpoMB8FEeqG3PSd6EGpCA" name="sample">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_yUCN0B8FEeqG3PSd6EGpCA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_G27qIB8GEeqG3PSd6EGpCA" name="src">
+      <packagedElement xmi:type="uml:Package" xmi:id="_G9K1AB8GEeqG3PSd6EGpCA" name="sample">
+        <packagedElement xmi:type="uml:Class" xmi:id="_G9N4UB8GEeqG3PSd6EGpCA" name="BarObstacle" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HBsIoB8GEeqG3PSd6EGpCA" general="_G9XpUB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HCFxQB8GEeqG3PSd6EGpCA" name="THICKNESS" visibility="public" isStatic="true" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_HCG_YB8GEeqG3PSd6EGpCA" name="defaultValue">
+              <language>JAVA</language>
+              <body>25</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wWeDAR8HEeqG3PSd6EGpCA" name="maze" type="_HITG8B8GEeqG3PSd6EGpCA" association="_wWdb8B8HEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wWeDAh8HEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wWeDAx8HEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HF7vcB8GEeqG3PSd6EGpCA" name="BarObstacle" specification="_HFeccB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.setX(x);&#xD;
+    this.setY(y);&#xD;
+    if (orientation.equals(&quot;horizontal&quot;)) {&#xD;
+        this.setHeight(BarObstacle.THICKNESS);&#xD;
+        this.setWidth(length * BarObstacle.THICKNESS);&#xD;
+    } else {&#xD;
+        this.setHeight(length * BarObstacle.THICKNESS);&#xD;
+        this.setWidth(BarObstacle.THICKNESS);&#xD;
+    }&#xD;
+    this.setFill(setup.wall);&#xD;
+    this.setStrokeWidth(1);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HFeccB8GEeqG3PSd6EGpCA" name="BarObstacle" visibility="public" method="_HF7vcB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HFpbkB8GEeqG3PSd6EGpCA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HFrQwB8GEeqG3PSd6EGpCA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HFuUEB8GEeqG3PSd6EGpCA" name="orientation" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HFwwUB8GEeqG3PSd6EGpCA" name="length">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HGaQkB8GEeqG3PSd6EGpCA" name="Cookie" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HGiMYB8GEeqG3PSd6EGpCA" general="_HGcFwB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HGkBkB8GEeqG3PSd6EGpCA" name="value" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_C8SHkx8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_C8SHkB8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C8SuoB8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C8SuoR8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HGwO0B8GEeqG3PSd6EGpCA" name="Cookie" specification="_HGl2wB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.value = 5;&#xD;
+    this.setCenterX(x);&#xD;
+    this.setCenterY(y);&#xD;
+    this.setRadius(12.5);&#xD;
+    this.setFill(Color.YELLOW);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HG4KoB8GEeqG3PSd6EGpCA" name="getValue" specification="_HGxc8B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    return value;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HG7N8B8GEeqG3PSd6EGpCA" name="hide" specification="_HG6m4B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.setVisible(false);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HHAtgB8GEeqG3PSd6EGpCA" name="show" specification="_HG_fYB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.setVisible(true);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HGl2wB8GEeqG3PSd6EGpCA" name="Cookie" visibility="public" method="_HGwO0B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HGr9YB8GEeqG3PSd6EGpCA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HGuZoB8GEeqG3PSd6EGpCA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HGxc8B8GEeqG3PSd6EGpCA" name="getValue" visibility="public" method="_HG4KoB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HG0gQB8GEeqG3PSd6EGpCA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HG6m4B8GEeqG3PSd6EGpCA" name="hide" visibility="public" method="_HG7N8B8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HG_fYB8GEeqG3PSd6EGpCA" name="show" visibility="public" method="_HHAtgB8GEeqG3PSd6EGpCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HHdZcB8GEeqG3PSd6EGpCA" name="GameManager" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HHhq4B8GEeqG3PSd6EGpCA" name="pacman" visibility="private" type="_HHgcwB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HHsqAB8GEeqG3PSd6EGpCA" name="root" visibility="private" type="_HHi5AB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HH3pIB8GEeqG3PSd6EGpCA" name="cookieSet" visibility="private" type="_HHvtUB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HH6scB8GEeqG3PSd6EGpCA" name="ghosts" visibility="private" type="_HHvtUB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIDPUB8GEeqG3PSd6EGpCA" name="leftPacmanAnimation" visibility="private" type="_HH9IsR8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIG5sB8GEeqG3PSd6EGpCA" name="rightPacmanAnimation" visibility="private" type="_HH9IsR8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIMZQB8GEeqG3PSd6EGpCA" name="upPacmanAnimation" visibility="private" type="_HH9IsR8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIQDoB8GEeqG3PSd6EGpCA" name="downPacmanAnimation" visibility="private" type="_HH9IsR8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIU8IB8GEeqG3PSd6EGpCA" name="maze" visibility="private" type="_HITG8B8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIXYYB8GEeqG3PSd6EGpCA" name="lifes" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIZ0oB8GEeqG3PSd6EGpCA" name="score" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIcQ4B8GEeqG3PSd6EGpCA" name="scoreBoard" visibility="private" type="_HIbCwB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIfUMB8GEeqG3PSd6EGpCA" name="gameEnded" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HIiXgB8GEeqG3PSd6EGpCA" name="cookiesEaten" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HpsR4h8IEeqG3PSd6EGpCA" name="writescore" type="_HNskUB8GEeqG3PSd6EGpCA" association="_Hprq0B8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HpsR4x8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HpsR5B8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HIwZ8B8GEeqG3PSd6EGpCA" name="GameManager" specification="_HImo8B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.root = root;&#xD;
+    this.maze = new Maze();&#xD;
+    this.pacman = new Pacman(2.5 * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);&#xD;
+    this.cookieSet = new HashSet&lt;>();&#xD;
+    this.ghosts = new HashSet&lt;>();&#xD;
+    this.leftPacmanAnimation = this.createAnimation(&quot;left&quot;);&#xD;
+    this.rightPacmanAnimation = this.createAnimation(&quot;right&quot;);&#xD;
+    this.upPacmanAnimation = this.createAnimation(&quot;up&quot;);&#xD;
+    this.downPacmanAnimation = this.createAnimation(&quot;down&quot;);&#xD;
+    this.lifes = 3;&#xD;
+    this.score = 0;&#xD;
+    this.cookiesEaten = 0;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HIzdQB8GEeqG3PSd6EGpCA" name="lifeLost" specification="_HIxoEB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.leftPacmanAnimation.stop();&#xD;
+    this.rightPacmanAnimation.stop();&#xD;
+    this.upPacmanAnimation.stop();&#xD;
+    this.downPacmanAnimation.stop();&#xD;
+    for (Ghost ghost : ghosts) {&#xD;
+        ghost.getAnimation().stop();&#xD;
+    }&#xD;
+    this.pacman.setCenterX(2.5 * BarObstacle.THICKNESS);&#xD;
+    this.pacman.setCenterY(2.5 * BarObstacle.THICKNESS);&#xD;
+    lifes--;&#xD;
+    score -= 10;&#xD;
+    this.scoreBoard.lifes.setText(&quot;Lifes: &quot; + this.lifes);&#xD;
+    this.scoreBoard.score.setText(&quot;Score: &quot; + this.score);&#xD;
+    if (lifes == 0) {&#xD;
+        this.endGame();&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HI480B8GEeqG3PSd6EGpCA" name="endGame" specification="_HI15gB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.gameEnded = true;&#xD;
+    root.getChildren().remove(pacman);&#xD;
+    for (Ghost ghost : ghosts) {&#xD;
+        root.getChildren().remove(ghost);&#xD;
+    }&#xD;
+    javafx.scene.text.Text endGame = new javafx.scene.text.Text(&quot;Game Over, press ESC to restart&quot;);&#xD;
+    endGame.setX(BarObstacle.THICKNESS * 3);&#xD;
+    endGame.setY(BarObstacle.THICKNESS * 28);&#xD;
+    endGame.setFont(Font.font(&quot;Arial&quot;, 40));&#xD;
+    endGame.setFill(Color.ROYALBLUE);&#xD;
+    root.getChildren().remove(this.scoreBoard.score);&#xD;
+    root.getChildren().remove(this.scoreBoard.lifes);&#xD;
+    root.getChildren().add(endGame);&#xD;
+    ArrayList&lt;Integer> SCORE = new ArrayList&lt;Integer>();&#xD;
+    SCORE = readscore.Insert();&#xD;
+    SCORE.add(this.score);&#xD;
+    Collections.sort(SCORE);&#xD;
+    Collections.reverse(SCORE);&#xD;
+    writescore.SortedFile(SCORE);&#xD;
+    System.out.println(SCORE.get(0));&#xD;
+    Label firstNameLabel = new Label();&#xD;
+    Label secondLabel = new Label();&#xD;
+    Label thirdLabel = new Label();&#xD;
+    Label fourthLabel = new Label();&#xD;
+    Label Label5 = new Label();&#xD;
+    Label Label6 = new Label();&#xD;
+    Label Label7 = new Label();&#xD;
+    Label Label8 = new Label();&#xD;
+    Label Label9 = new Label();&#xD;
+    Label Label10 = new Label();&#xD;
+    AnchorPane ap = new AnchorPane();&#xD;
+    ap.setStyle(&quot;-fx-bcakground-color:#AEEEEE&quot;);&#xD;
+    VBox pane1 = new VBox();&#xD;
+    pane1.setPrefWidth(200);&#xD;
+    pane1.setPrefHeight(400);&#xD;
+    pane1.setPadding(new Insets(80));&#xD;
+    pane1.setStyle(&quot;-fx-bcakground-color:#AEEEEE&quot;);&#xD;
+    firstNameLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(0)).asString());&#xD;
+    //  secondLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(1)).asString());&#xD;
+    // secondLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(2)).asString());&#xD;
+    //fourthLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(3)).asString());&#xD;
+    pane1.getChildren().addAll(firstNameLabel);&#xD;
+    if (SCORE.size() > 1) {&#xD;
+        secondLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(1)).asString());&#xD;
+        pane1.getChildren().addAll(secondLabel);&#xD;
+    }&#xD;
+    if (SCORE.size() > 2) {&#xD;
+        thirdLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(2)).asString());&#xD;
+        pane1.getChildren().addAll(thirdLabel);&#xD;
+    }&#xD;
+    if (SCORE.size() > 3) {&#xD;
+        fourthLabel.textProperty().bind(new SimpleIntegerProperty(SCORE.get(3)).asString());&#xD;
+        pane1.getChildren().addAll(fourthLabel);&#xD;
+    }&#xD;
+    if (SCORE.size() > 4) {&#xD;
+        Label5.textProperty().bind(new SimpleIntegerProperty(SCORE.get(4)).asString());&#xD;
+        pane1.getChildren().addAll(Label5);&#xD;
+    }&#xD;
+    if (SCORE.size() > 5) {&#xD;
+        Label6.textProperty().bind(new SimpleIntegerProperty(SCORE.get(5)).asString());&#xD;
+        pane1.getChildren().addAll(Label6);&#xD;
+    }&#xD;
+    if (SCORE.size() > 6) {&#xD;
+        Label7.textProperty().bind(new SimpleIntegerProperty(SCORE.get(6)).asString());&#xD;
+        pane1.getChildren().addAll(Label7);&#xD;
+    }&#xD;
+    if (SCORE.size() > 7) {&#xD;
+        Label8.textProperty().bind(new SimpleIntegerProperty(SCORE.get(7)).asString());&#xD;
+        pane1.getChildren().addAll(Label8);&#xD;
+    }&#xD;
+    if (SCORE.size() > 8) {&#xD;
+        Label9.textProperty().bind(new SimpleIntegerProperty(SCORE.get(8)).asString());&#xD;
+        pane1.getChildren().addAll(Label9);&#xD;
+    }&#xD;
+    if (SCORE.size() > 9) {&#xD;
+        Label10.textProperty().bind(new SimpleIntegerProperty(SCORE.get(9)).asString());&#xD;
+        pane1.getChildren().addAll(Label10);&#xD;
+    }&#xD;
+    //  pane1.getChildren().addAll(firstNameLabel, secondLabel, thirdLabel, fourthLabel);&#xD;
+    ap.getChildren().addAll(pane1);&#xD;
+    Scene scene1 = new Scene(ap, 200, 400);&#xD;
+    Stage newStage = new Stage();&#xD;
+    newStage.setScene(scene1);&#xD;
+    newStage.initModality(Modality.APPLICATION_MODAL);&#xD;
+    newStage.show();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJGYMB8GEeqG3PSd6EGpCA" name="restartGame" specification="_HJCt0B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    if (event.getCode() == KeyCode.ESCAPE &amp;&amp; gameEnded) {&#xD;
+        root.getChildren().clear();&#xD;
+        this.cookieSet.clear();&#xD;
+        this.ghosts.clear();&#xD;
+        this.drawBoard();&#xD;
+        this.pacman.setCenterX(2.5 * BarObstacle.THICKNESS);&#xD;
+        this.pacman.setCenterY(2.5 * BarObstacle.THICKNESS);&#xD;
+        this.lifes = 3;&#xD;
+        this.score = 0;&#xD;
+        this.cookiesEaten = 0;&#xD;
+        gameEnded = false;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJKpoB8GEeqG3PSd6EGpCA" name="drawBoard" specification="_HJJbgB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.maze.CreateMaze(root);&#xD;
+    // 1st line&#xD;
+    Integer skip[] = { 5, 17 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 2.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 2nd line&#xD;
+    skip = new Integer[] { 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 20, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 4.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 3rd line&#xD;
+    skip = new Integer[] { 1, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 6.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 4th line&#xD;
+    skip = new Integer[] { 1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 8.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 5th line&#xD;
+    skip = new Integer[] { 1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 10.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 6th line&#xD;
+    skip = new Integer[] { 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 12.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 7th line&#xD;
+    skip = new Integer[] { 1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 14.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 8th line&#xD;
+    skip = new Integer[] { 1, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 16.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 9th line&#xD;
+    skip = new Integer[] { 1, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 18.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 10th line&#xD;
+    skip = new Integer[] { 1, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 19, 20, 21 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 20.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    // 11th line&#xD;
+    skip = new Integer[] { 5, 17 };&#xD;
+    for (int i = 0; i &lt; 23; i++) {&#xD;
+        if (!Arrays.asList(skip).contains(i)) {&#xD;
+            Cookie cookie = new Cookie(((2 * i) + 2.5) * BarObstacle.THICKNESS, 22.5 * BarObstacle.THICKNESS);&#xD;
+            this.cookieSet.add(cookie);&#xD;
+            root.getChildren().add(cookie);&#xD;
+        }&#xD;
+    }&#xD;
+    root.getChildren().add(this.pacman);&#xD;
+    this.generateGhosts();&#xD;
+    root.getChildren().addAll(this.ghosts);&#xD;
+    this.scoreBoard = new Score(root);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJQJMB8GEeqG3PSd6EGpCA" name="generateGhosts" specification="_HJO7EB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.ghosts.add(new Ghost(18.5 * BarObstacle.THICKNESS, 12.5 * BarObstacle.THICKNESS, Color.DEEPPINK, maze, this));&#xD;
+    this.ghosts.add(new Ghost(22.5 * BarObstacle.THICKNESS, 12.5 * BarObstacle.THICKNESS, Color.GREENYELLOW, maze, this));&#xD;
+    this.ghosts.add(new Ghost(28.5 * BarObstacle.THICKNESS, 12.5 * BarObstacle.THICKNESS, Color.BLACK, maze, this));&#xD;
+    this.ghosts.add(new Ghost(28.5 * BarObstacle.THICKNESS, 9.5 * BarObstacle.THICKNESS, Color.SPRINGGREEN, maze, this));&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJW24B8GEeqG3PSd6EGpCA" name="movePacman" specification="_HJTzkB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    for (Ghost ghost : this.ghosts) {&#xD;
+        ghost.run();&#xD;
+    }&#xD;
+    switch(event.getCode()) {&#xD;
+        case RIGHT:&#xD;
+            this.rightPacmanAnimation.start();&#xD;
+            break;&#xD;
+        case LEFT:&#xD;
+            this.leftPacmanAnimation.start();&#xD;
+            break;&#xD;
+        case UP:&#xD;
+            this.upPacmanAnimation.start();&#xD;
+            break;&#xD;
+        case DOWN:&#xD;
+            this.downPacmanAnimation.start();&#xD;
+            break;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJc9gB8GEeqG3PSd6EGpCA" name="stopPacman" specification="_HJYsEB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    switch(event.getCode()) {&#xD;
+        case RIGHT:&#xD;
+            this.rightPacmanAnimation.stop();&#xD;
+            break;&#xD;
+        case LEFT:&#xD;
+            this.leftPacmanAnimation.stop();&#xD;
+            break;&#xD;
+        case UP:&#xD;
+            this.upPacmanAnimation.stop();&#xD;
+            break;&#xD;
+        case DOWN:&#xD;
+            this.downPacmanAnimation.stop();&#xD;
+            break;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJhO8B8GEeqG3PSd6EGpCA" name="createAnimation" specification="_HJeLoB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double step = 5;&#xD;
+    return new AnimationTimer() {&#xD;
+&#xD;
+        public void handle(long currentNanoTime) {&#xD;
+            switch(direction) {&#xD;
+                case &quot;left&quot;:&#xD;
+                    if (!maze.isTouching(pacman.getCenterX() - pacman.getRadius(), pacman.getCenterY(), 15)) {&#xD;
+                        pacman.setCenterX(pacman.getCenterX() - step);&#xD;
+                        checkCookieCoalition(pacman, &quot;x&quot;);&#xD;
+                        checkleftdoor();&#xD;
+                        checkGhostCoalition();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;right&quot;:&#xD;
+                    if (!maze.isTouching(pacman.getCenterX() + pacman.getRadius(), pacman.getCenterY(), 15)) {&#xD;
+                        pacman.setCenterX(pacman.getCenterX() + step);&#xD;
+                        checkCookieCoalition(pacman, &quot;x&quot;);&#xD;
+                        checkleftdoor();&#xD;
+                        checkGhostCoalition();&#xD;
+                        checkleftdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;up&quot;:&#xD;
+                    if (!maze.isTouching(pacman.getCenterX(), pacman.getCenterY() - pacman.getRadius(), 15)) {&#xD;
+                        pacman.setCenterY(pacman.getCenterY() - step);&#xD;
+                        checkCookieCoalition(pacman, &quot;y&quot;);&#xD;
+                        checkGhostCoalition();&#xD;
+                        checkleftdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;down&quot;:&#xD;
+                    if (!maze.isTouching(pacman.getCenterX(), pacman.getCenterY() + pacman.getRadius(), 15)) {&#xD;
+                        pacman.setCenterY(pacman.getCenterY() + step);&#xD;
+                        checkCookieCoalition(pacman, &quot;y&quot;);&#xD;
+                        checkGhostCoalition();&#xD;
+                        checkleftdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+            }&#xD;
+        }&#xD;
+    };&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJmugB8GEeqG3PSd6EGpCA" name="checkCookieCoalition" specification="_HJjEIB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double pacmanCenterY = pacman.getCenterY();&#xD;
+    double pacmanCenterX = pacman.getCenterX();&#xD;
+    double pacmanLeftEdge = pacmanCenterX - pacman.getRadius();&#xD;
+    double pacmanRightEdge = pacmanCenterX + pacman.getRadius();&#xD;
+    double pacmanTopEdge = pacmanCenterY - pacman.getRadius();&#xD;
+    double pacmanBottomEdge = pacmanCenterY + pacman.getRadius();&#xD;
+    for (Cookie cookie : cookieSet) {&#xD;
+        double cookieCenterX = cookie.getCenterX();&#xD;
+        double cookieCenterY = cookie.getCenterY();&#xD;
+        double cookieLeftEdge = cookieCenterX - cookie.getRadius();&#xD;
+        double cookieRightEdge = cookieCenterX + cookie.getRadius();&#xD;
+        double cookieTopEdge = cookieCenterY - cookie.getRadius();&#xD;
+        double cookieBottomEdge = cookieCenterY + cookie.getRadius();&#xD;
+        if (axis.equals(&quot;x&quot;)) {&#xD;
+            // pacman goes right&#xD;
+            if ((cookieCenterY >= pacmanTopEdge &amp;&amp; cookieCenterY &lt;= pacmanBottomEdge) &amp;&amp; (pacmanRightEdge >= cookieLeftEdge &amp;&amp; pacmanRightEdge &lt;= cookieRightEdge)) {&#xD;
+                if (cookie.isVisible()) {&#xD;
+                    this.score += cookie.getValue();&#xD;
+                    this.cookiesEaten++;&#xD;
+                }&#xD;
+                cookie.hide();&#xD;
+            }&#xD;
+            // pacman goes left&#xD;
+            if ((cookieCenterY >= pacmanTopEdge &amp;&amp; cookieCenterY &lt;= pacmanBottomEdge) &amp;&amp; (pacmanLeftEdge >= cookieLeftEdge &amp;&amp; pacmanLeftEdge &lt;= cookieRightEdge)) {&#xD;
+                if (cookie.isVisible()) {&#xD;
+                    this.score += cookie.getValue();&#xD;
+                    this.cookiesEaten++;&#xD;
+                }&#xD;
+                cookie.hide();&#xD;
+            }&#xD;
+        } else {&#xD;
+            // pacman goes up&#xD;
+            if ((cookieCenterX >= pacmanLeftEdge &amp;&amp; cookieCenterX &lt;= pacmanRightEdge) &amp;&amp; (pacmanBottomEdge >= cookieTopEdge &amp;&amp; pacmanBottomEdge &lt;= cookieBottomEdge)) {&#xD;
+                if (cookie.isVisible()) {&#xD;
+                    this.score += cookie.getValue();&#xD;
+                    this.cookiesEaten++;&#xD;
+                }&#xD;
+                cookie.hide();&#xD;
+            }&#xD;
+            // pacman goes down&#xD;
+            if ((cookieCenterX >= pacmanLeftEdge &amp;&amp; cookieCenterX &lt;= pacmanRightEdge) &amp;&amp; (pacmanTopEdge &lt;= cookieBottomEdge &amp;&amp; pacmanTopEdge >= cookieTopEdge)) {&#xD;
+                if (cookie.isVisible()) {&#xD;
+                    this.score += cookie.getValue();&#xD;
+                    this.cookiesEaten++;&#xD;
+                }&#xD;
+                cookie.hide();&#xD;
+            }&#xD;
+        }&#xD;
+        this.scoreBoard.score.setText(&quot;Score: &quot; + this.score);&#xD;
+        if (this.cookiesEaten == this.cookieSet.size()) {&#xD;
+            this.endGame();&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJojsB8GEeqG3PSd6EGpCA" name="checkGhostCoalition" specification="_HJmugR8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double pacmanCenterY = pacman.getCenterY();&#xD;
+    double pacmanCenterX = pacman.getCenterX();&#xD;
+    double pacmanLeftEdge = pacmanCenterX - pacman.getRadius();&#xD;
+    double pacmanRightEdge = pacmanCenterX + pacman.getRadius();&#xD;
+    double pacmanTopEdge = pacmanCenterY - pacman.getRadius();&#xD;
+    double pacmanBottomEdge = pacmanCenterY + pacman.getRadius();&#xD;
+    for (Ghost ghost : ghosts) {&#xD;
+        double ghostLeftEdge = ghost.getX();&#xD;
+        double ghostRightEdge = ghost.getX() + ghost.getWidth();&#xD;
+        double ghostTopEdge = ghost.getY();&#xD;
+        double ghostBottomEdge = ghost.getY() + ghost.getHeight();&#xD;
+        if ((pacmanLeftEdge &lt;= ghostRightEdge &amp;&amp; pacmanLeftEdge >= ghostLeftEdge) || (pacmanRightEdge >= ghostLeftEdge &amp;&amp; pacmanRightEdge &lt;= ghostRightEdge)) {&#xD;
+            if ((pacmanTopEdge &lt;= ghostBottomEdge &amp;&amp; pacmanTopEdge >= ghostTopEdge) || (pacmanBottomEdge >= ghostTopEdge &amp;&amp; pacmanBottomEdge &lt;= ghostBottomEdge)) {&#xD;
+                lifeLost();&#xD;
+            }&#xD;
+        }&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HJsOEB8GEeqG3PSd6EGpCA" name="checkleftdoor" specification="_HJq_8B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double pacmanCenterY = pacman.getCenterY();&#xD;
+    double pacmanCenterX = pacman.getCenterX();&#xD;
+    // System.out.println( &quot;center Y = &quot;+ pacmanCenterX);&#xD;
+    if (pacmanCenterY >= 275 &amp;&amp; pacmanCenterY &lt;= 350 &amp;&amp; pacmanCenterX &lt; 12.5) {&#xD;
+        this.pacman.setCenterX(1217);&#xD;
+    }&#xD;
+    if (pacmanCenterY >= 275.5 &amp;&amp; pacmanCenterY &lt;= 350 &amp;&amp; pacmanCenterX > 1218) {&#xD;
+        this.pacman.setCenterX(13);&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HImo8B8GEeqG3PSd6EGpCA" name="GameManager" visibility="private" method="_HIwZ8B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HIukwB8GEeqG3PSd6EGpCA" name="root" type="_HHi5AB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HIxoEB8GEeqG3PSd6EGpCA" name="lifeLost" visibility="private" method="_HIzdQB8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HI15gB8GEeqG3PSd6EGpCA" name="endGame" visibility="private" method="_HI480B8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJCt0B8GEeqG3PSd6EGpCA" name="restartGame" visibility="public" method="_HJGYMB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJEjAB8GEeqG3PSd6EGpCA" name="event" type="_HI7ZEB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJJbgB8GEeqG3PSd6EGpCA" name="drawBoard" visibility="public" method="_HJKpoB8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJO7EB8GEeqG3PSd6EGpCA" name="generateGhosts" visibility="public" method="_HJQJMB8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJTzkB8GEeqG3PSd6EGpCA" name="movePacman" visibility="public" method="_HJW24B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJVowB8GEeqG3PSd6EGpCA" name="event" type="_HI7ZEB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJYsEB8GEeqG3PSd6EGpCA" name="stopPacman" visibility="public" method="_HJc9gB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJbIUB8GEeqG3PSd6EGpCA" name="event" type="_HI7ZEB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJeLoB8GEeqG3PSd6EGpCA" name="createAnimation" visibility="private" method="_HJhO8B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJfZwB8GEeqG3PSd6EGpCA" type="_HH9IsR8GEeqG3PSd6EGpCA" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJgA0B8GEeqG3PSd6EGpCA" name="direction" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJjEIB8GEeqG3PSd6EGpCA" name="checkCookieCoalition" visibility="private" method="_HJmugB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJkSQB8GEeqG3PSd6EGpCA" name="pacman" type="_HHgcwB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HJlgYB8GEeqG3PSd6EGpCA" name="axis" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJmugR8GEeqG3PSd6EGpCA" name="checkGhostCoalition" visibility="public" method="_HJojsB8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HJq_8B8GEeqG3PSd6EGpCA" name="checkleftdoor" visibility="public" method="_HJsOEB8GEeqG3PSd6EGpCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HHgcwB8GEeqG3PSd6EGpCA" name="Pacman" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HLyf0B8GEeqG3PSd6EGpCA" general="_HGcFwB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DwYeAh8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_DwX28B8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DwYeAx8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DwYeBB8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HL3YUB8GEeqG3PSd6EGpCA" name="Pacman" specification="_HLyf0R8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.setCenterX(x);&#xD;
+    this.setCenterY(y);&#xD;
+    this.setRadius(25);&#xD;
+    this.setFill(Color.BLACK);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLyf0R8GEeqG3PSd6EGpCA" name="Pacman" visibility="public" method="_HL3YUB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HL1jIB8GEeqG3PSd6EGpCA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HL2KMB8GEeqG3PSd6EGpCA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HITG8B8GEeqG3PSd6EGpCA" name="Maze" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HLe90B8GEeqG3PSd6EGpCA" name="obstacles" visibility="public" type="_HHvtUB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLpV4B8GEeqG3PSd6EGpCA" name="Maze" specification="_HLjPQB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    obstacles = new HashSet&lt;>();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLryIh8GEeqG3PSd6EGpCA" name="isTouching" specification="_HLqkAB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    for (BarObstacle barObstacle : obstacles) {&#xD;
+        if (x >= barObstacle.getX() - padding &amp;&amp; x &lt;= barObstacle.getX() + padding + barObstacle.getWidth() &amp;&amp; y >= barObstacle.getY() - padding &amp;&amp; y &lt;= barObstacle.getY() + padding + barObstacle.getHeight()) {&#xD;
+            return true;&#xD;
+        }&#xD;
+    }&#xD;
+    return false;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLuOYB8GEeqG3PSd6EGpCA" name="hasObstacle" specification="_HLsZMB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    boolean isTouching = false;&#xD;
+    for (double i = fromX; i &lt; toX; i++) {&#xD;
+        for (double j = fromY; j &lt; toY; j++) {&#xD;
+            if (this.isTouching(i, j, 0))&#xD;
+                isTouching = true;&#xD;
+        }&#xD;
+    }&#xD;
+    return isTouching;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLvcgB8GEeqG3PSd6EGpCA" name="CreateMaze" specification="_HLuOYR8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    //~~~~~~~~~~~~~~~~~~~~~~~~~ frame ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&#xD;
+    // top&#xD;
+    this.obstacles.add(new BarObstacle(0, 0, &quot;horizontal&quot;, 48));&#xD;
+    // bottom&#xD;
+    this.obstacles.add(new BarObstacle(0, 600, &quot;horizontal&quot;, 48));&#xD;
+    // left&#xD;
+    this.obstacles.add(new BarObstacle(0, 0, &quot;vertical&quot;, 11));&#xD;
+    this.obstacles.add(new BarObstacle(0, 350, &quot;vertical&quot;, 11));&#xD;
+    // right&#xD;
+    this.obstacles.add(new BarObstacle(1225 - BarObstacle.THICKNESS, 0, &quot;vertical&quot;, 11));&#xD;
+    this.obstacles.add(new BarObstacle(1225 - BarObstacle.THICKNESS, 350, &quot;vertical&quot;, 11));&#xD;
+    //~~~~~~~~~~~~~~~~~~~~~~~~~ Islands ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&#xD;
+    // obsTopLeft&#xD;
+    this.obstacles.add(new BarObstacle(12 * BarObstacle.THICKNESS, BarObstacle.THICKNESS, &quot;vertical&quot;, 4));&#xD;
+    // obsTopRight&#xD;
+    this.obstacles.add(new BarObstacle(36 * BarObstacle.THICKNESS, BarObstacle.THICKNESS, &quot;vertical&quot;, 4));&#xD;
+    // obsBottomLeft&#xD;
+    this.obstacles.add(new BarObstacle(12 * BarObstacle.THICKNESS, 600 - 4 * BarObstacle.THICKNESS, &quot;vertical&quot;, 4));&#xD;
+    // obsBottomRight&#xD;
+    this.obstacles.add(new BarObstacle(36 * BarObstacle.THICKNESS, 600 - 4 * BarObstacle.THICKNESS, &quot;vertical&quot;, 4));&#xD;
+    // obsTopMiddle&#xD;
+    this.obstacles.add(new BarObstacle(16 * BarObstacle.THICKNESS, 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 17));&#xD;
+    // obsBottomMiddle&#xD;
+    this.obstacles.add(new BarObstacle(16 * BarObstacle.THICKNESS, 600 - 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 17));&#xD;
+    // obsLMTop&#xD;
+    this.obstacles.add(new BarObstacle(8 * BarObstacle.THICKNESS, 8 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // obsLMTop4&#xD;
+    this.obstacles.add(new BarObstacle(8 * BarObstacle.THICKNESS, 12 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // obsLMBottom&#xD;
+    this.obstacles.add(new BarObstacle(8 * BarObstacle.THICKNESS, 16 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // obsRMTop&#xD;
+    this.obstacles.add(new BarObstacle(36 * BarObstacle.THICKNESS, 8 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // obsRMTop2&#xD;
+    this.obstacles.add(new BarObstacle(36 * BarObstacle.THICKNESS, 12 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // obsRMBottom&#xD;
+    this.obstacles.add(new BarObstacle(36 * BarObstacle.THICKNESS, 16 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // LobsLeftTop1&#xD;
+    this.obstacles.add(new BarObstacle(4 * BarObstacle.THICKNESS, 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // LobsLeftTop2&#xD;
+    this.obstacles.add(new BarObstacle(4 * BarObstacle.THICKNESS, 5 * BarObstacle.THICKNESS, &quot;vertical&quot;, 6));&#xD;
+    // LobsLeftBottom1&#xD;
+    this.obstacles.add(new BarObstacle(4 * BarObstacle.THICKNESS, 600 - 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // LobsLeftBottom2&#xD;
+    this.obstacles.add(new BarObstacle(4 * BarObstacle.THICKNESS, 600 - 10 * BarObstacle.THICKNESS, &quot;vertical&quot;, 6));&#xD;
+    // LobsRightTop1&#xD;
+    this.obstacles.add(new BarObstacle(40 * BarObstacle.THICKNESS, 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // LobsRightTop2&#xD;
+    this.obstacles.add(new BarObstacle(44 * BarObstacle.THICKNESS, 5 * BarObstacle.THICKNESS, &quot;vertical&quot;, 6));&#xD;
+    // LobsRightBottom1&#xD;
+    this.obstacles.add(new BarObstacle(40 * BarObstacle.THICKNESS, 600 - 4 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // LobsRightBottom2&#xD;
+    this.obstacles.add(new BarObstacle(44 * BarObstacle.THICKNESS, 600 - 10 * BarObstacle.THICKNESS, &quot;vertical&quot;, 6));&#xD;
+    // cageBottom&#xD;
+    this.obstacles.add(new BarObstacle(16 * BarObstacle.THICKNESS, 600 - 8 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 17));&#xD;
+    // cageRightV&#xD;
+    this.obstacles.add(new BarObstacle(32 * BarObstacle.THICKNESS, 600 - 16 * BarObstacle.THICKNESS, &quot;vertical&quot;, 8));&#xD;
+    // cageLeftV&#xD;
+    this.obstacles.add(new BarObstacle(16 * BarObstacle.THICKNESS, 600 - 16 * BarObstacle.THICKNESS, &quot;vertical&quot;, 8));&#xD;
+    // cateRightH&#xD;
+    this.obstacles.add(new BarObstacle(17 * BarObstacle.THICKNESS, 8 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    // cateLeftH&#xD;
+    this.obstacles.add(new BarObstacle(27 * BarObstacle.THICKNESS, 8 * BarObstacle.THICKNESS, &quot;horizontal&quot;, 5));&#xD;
+    root.getChildren().addAll(obstacles);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLjPQB8GEeqG3PSd6EGpCA" name="Maze" visibility="private" method="_HLpV4B8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLqkAB8GEeqG3PSd6EGpCA" name="isTouching" visibility="public" method="_HLryIh8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLqkAR8GEeqG3PSd6EGpCA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_f-GnEPaLEeW5KOK8aDMdgA"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLrLEB8GEeqG3PSd6EGpCA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLryIB8GEeqG3PSd6EGpCA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLryIR8GEeqG3PSd6EGpCA" name="padding">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLsZMB8GEeqG3PSd6EGpCA" name="hasObstacle" visibility="public" method="_HLuOYB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLsZMR8GEeqG3PSd6EGpCA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_f-GnEPaLEeW5KOK8aDMdgA"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLtAQB8GEeqG3PSd6EGpCA" name="fromX">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLtnUB8GEeqG3PSd6EGpCA" name="toX">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLtnUR8GEeqG3PSd6EGpCA" name="fromY">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLtnUh8GEeqG3PSd6EGpCA" name="toY">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLuOYR8GEeqG3PSd6EGpCA" name="CreateMaze" visibility="public" method="_HLvcgB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HLu1cB8GEeqG3PSd6EGpCA" name="root" type="_HHi5AB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HIbCwB8GEeqG3PSd6EGpCA" name="Score" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMMvgB8GEeqG3PSd6EGpCA" name="score" visibility="public" type="_HMIeEB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMN9oB8GEeqG3PSd6EGpCA" name="lifes" visibility="public" type="_HMIeEB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fEkn8h8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_fEkA4B8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fElPAB8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fElPAR8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HMS2IB8GEeqG3PSd6EGpCA" name="Score" specification="_HMN9oR8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.score = new Text(BarObstacle.THICKNESS * 4, BarObstacle.THICKNESS * 28, &quot;Score: 0&quot;);&#xD;
+    this.lifes = new Text(BarObstacle.THICKNESS * 20, BarObstacle.THICKNESS * 28, &quot;Lifes: 3&quot;);&#xD;
+    score.setFill(Color.MAGENTA);&#xD;
+    score.setFont(Font.font(&quot;Arial&quot;, 30));&#xD;
+    lifes.setFill(Color.MAROON);&#xD;
+    lifes.setFont(Font.font(&quot;Arial&quot;, 30));&#xD;
+    root.getChildren().add(score);&#xD;
+    root.getChildren().add(lifes);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HMN9oR8GEeqG3PSd6EGpCA" name="Score" visibility="private" method="_HMS2IB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HMSPEB8GEeqG3PSd6EGpCA" name="root" type="_HHi5AB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HJ0w8B8GEeqG3PSd6EGpCA" name="Ghost" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HJ2mIB8GEeqG3PSd6EGpCA" general="_G9XpUB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HKGdwB8GEeqG3PSd6EGpCA" name="direction" visibility="private" type="_HFWgoB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HKHE0B8GEeqG3PSd6EGpCA" name="gameManager" visibility="private" type="_HHdZcB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HKJhEB8GEeqG3PSd6EGpCA" name="maze" visibility="private" type="_HITG8B8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HKLWQB8GEeqG3PSd6EGpCA" name="animation" visibility="private" type="_HH9IsR8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HKNLcB8GEeqG3PSd6EGpCA" name="timesWalked" visibility="private" isUnique="false">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_AgurIh8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_AguEEB8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AgurIx8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AgurJB8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_HKEBgB8GEeqG3PSd6EGpCA" name="Ghost implements Runnable" client="_HJ0w8B8GEeqG3PSd6EGpCA" supplier="_HJ4bUB8GEeqG3PSd6EGpCA" contract="_HJ4bUB8GEeqG3PSd6EGpCA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HKeRMB8GEeqG3PSd6EGpCA" name="Ghost" specification="_HKOZkB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.setX(x);&#xD;
+    this.setY(y);&#xD;
+    this.maze = maze;&#xD;
+    this.gameManager = gameManager;&#xD;
+    this.setHeight(50);&#xD;
+    this.setWidth(50);&#xD;
+    this.setFill(color);&#xD;
+    this.timesWalked = 0;&#xD;
+    this.direction = &quot;down&quot;;&#xD;
+    this.createAnimation();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HKmNAB8GEeqG3PSd6EGpCA" name="getRandomDirection" specification="_HKgGYB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    String[] directions = { &quot;left&quot;, &quot;right&quot;, &quot;up&quot;, &quot;down&quot; };&#xD;
+    int rnd = new Random().nextInt(directions.length);&#xD;
+    while (directions[rnd].equals(exclude1) || directions[rnd].equals(exclude2)) {&#xD;
+        rnd = new Random().nextInt(directions.length);&#xD;
+    }&#xD;
+    return directions[rnd];&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HKpQUB8GEeqG3PSd6EGpCA" name="getRandomBoolean" specification="_HKoCMB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    Random rand = new Random();&#xD;
+    return rand.nextBoolean();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HKrFgB8GEeqG3PSd6EGpCA" name="getAnimation" specification="_HKp3YB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    return animation;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HKsToB8GEeqG3PSd6EGpCA" name="checkIftheresPathToGo" specification="_HKrFgR8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double rightEdge, leftEdge, topEdge, bottomEdge;&#xD;
+    switch(direction) {&#xD;
+        case &quot;down&quot;:&#xD;
+            leftEdge = getX() - 10;&#xD;
+            bottomEdge = getY() + getHeight() + 15;&#xD;
+            rightEdge = getX() + getWidth() + 10;&#xD;
+            if (!maze.hasObstacle(leftEdge, rightEdge, bottomEdge - 1, bottomEdge)) {&#xD;
+                this.direction = direction;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;up&quot;:&#xD;
+            leftEdge = getX() - 10;&#xD;
+            rightEdge = getX() + getWidth() + 10;&#xD;
+            topEdge = getY() - 15;&#xD;
+            if (!maze.hasObstacle(leftEdge, rightEdge, topEdge - 1, topEdge)) {&#xD;
+                this.direction = direction;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;left&quot;:&#xD;
+            leftEdge = getX() - 15;&#xD;
+            bottomEdge = getY() + getHeight() + 10;&#xD;
+            topEdge = getY() - 10;&#xD;
+            if (!maze.hasObstacle(leftEdge - 1, leftEdge, topEdge, bottomEdge)) {&#xD;
+                this.direction = direction;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;right&quot;:&#xD;
+            bottomEdge = getY() + getHeight() + 10;&#xD;
+            rightEdge = getX() + getWidth() + 15;&#xD;
+            topEdge = getY() - 10;&#xD;
+            if (!maze.hasObstacle(rightEdge - 1, rightEdge, topEdge, bottomEdge)) {&#xD;
+                this.direction = direction;&#xD;
+            }&#xD;
+            break;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HK0PcR8GEeqG3PSd6EGpCA" name="moveUntilYouCant" specification="_HKs6sB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double step = 5;&#xD;
+    switch(whereToGo) {&#xD;
+        case &quot;left&quot;:&#xD;
+            if (!maze.isTouching(leftEdge, topEdge, padding)) {&#xD;
+                setX(leftEdge - step);&#xD;
+            } else {&#xD;
+                while (maze.isTouching(getX(), getY(), padding)) {&#xD;
+                    setX(getX() + 1);&#xD;
+                }&#xD;
+                direction = whereToChangeTo;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;right&quot;:&#xD;
+            if (!maze.isTouching(rightEdge, topEdge, padding)) {&#xD;
+                setX(leftEdge + step);&#xD;
+            } else {&#xD;
+                while (maze.isTouching(getX() + getWidth(), getY(), padding)) {&#xD;
+                    setX(getX() - 1);&#xD;
+                }&#xD;
+                direction = whereToChangeTo;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;up&quot;:&#xD;
+            if (!maze.isTouching(leftEdge, topEdge, padding)) {&#xD;
+                setY(topEdge - step);&#xD;
+            } else {&#xD;
+                while (maze.isTouching(getX(), getY(), padding)) {&#xD;
+                    setY(getY() + 1);&#xD;
+                }&#xD;
+                direction = &quot;left&quot;;&#xD;
+            }&#xD;
+            break;&#xD;
+        case &quot;down&quot;:&#xD;
+            if (!maze.isTouching(leftEdge, bottomEdge, padding)) {&#xD;
+                setY(topEdge + step);&#xD;
+            } else {&#xD;
+                while (maze.isTouching(getX(), getY() + getHeight(), padding)) {&#xD;
+                    setY(getY() - 1);&#xD;
+                }&#xD;
+                direction = &quot;right&quot;;&#xD;
+            }&#xD;
+            break;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HK2rsB8GEeqG3PSd6EGpCA" name="createAnimation" specification="_HK2EoB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.animation = new AnimationTimer() {&#xD;
+&#xD;
+        public void handle(long currentNanoTime) {&#xD;
+            gameManager.checkGhostCoalition();&#xD;
+            double leftEdge = getX();&#xD;
+            double topEdge = getY();&#xD;
+            double rightEdge = getX() + getWidth();&#xD;
+            double bottomEdge = getY() + getHeight();&#xD;
+            double padding = 12;&#xD;
+            timesWalked++;&#xD;
+            int walkAtLeast = 4;&#xD;
+            switch(direction) {&#xD;
+                case &quot;left&quot;:&#xD;
+                    moveUntilYouCant(&quot;left&quot;, &quot;down&quot;, leftEdge, topEdge, rightEdge, bottomEdge, padding);&#xD;
+                    if (timesWalked > walkAtLeast) {&#xD;
+                        checkIftheresPathToGo(getRandomDirection(&quot;left&quot;, &quot;right&quot;));&#xD;
+                        timesWalked = 0;&#xD;
+                        checkgdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;right&quot;:&#xD;
+                    moveUntilYouCant(&quot;right&quot;, &quot;up&quot;, leftEdge, topEdge, rightEdge, bottomEdge, padding);&#xD;
+                    if (timesWalked > walkAtLeast) {&#xD;
+                        checkIftheresPathToGo(getRandomDirection(&quot;left&quot;, &quot;right&quot;));&#xD;
+                        timesWalked = 0;&#xD;
+                        checkgdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;up&quot;:&#xD;
+                    moveUntilYouCant(&quot;up&quot;, &quot;left&quot;, leftEdge, topEdge, rightEdge, bottomEdge, padding);&#xD;
+                    if (timesWalked > walkAtLeast) {&#xD;
+                        checkIftheresPathToGo(getRandomDirection(&quot;up&quot;, &quot;down&quot;));&#xD;
+                        timesWalked = 0;&#xD;
+                        checkgdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+                case &quot;down&quot;:&#xD;
+                    moveUntilYouCant(&quot;down&quot;, &quot;right&quot;, leftEdge, topEdge, rightEdge, bottomEdge, padding);&#xD;
+                    if (timesWalked > walkAtLeast) {&#xD;
+                        checkIftheresPathToGo(getRandomDirection(&quot;up&quot;, &quot;down&quot;));&#xD;
+                        timesWalked = 0;&#xD;
+                        checkgdoor();&#xD;
+                    }&#xD;
+                    break;&#xD;
+            }&#xD;
+        }&#xD;
+    };&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HK2rsh8GEeqG3PSd6EGpCA" name="run" specification="_HK2rsR8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    this.animation.start();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HK3SwR8GEeqG3PSd6EGpCA" name="checkgdoor" specification="_HK3SwB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    double ghostLeftEdge = getX();&#xD;
+    double ghostCenterX = ghostLeftEdge + 25;&#xD;
+    double ghostTopEdge = getY();&#xD;
+    double ghostCenterY = ghostTopEdge + 25;&#xD;
+    if (ghostCenterY >= 297.5 &amp;&amp; ghostCenterY &lt;= 350 &amp;&amp; ghostCenterX &lt; 12.5) {&#xD;
+        setX(1217);&#xD;
+    }&#xD;
+    if (ghostCenterY >= 297.5 &amp;&amp; ghostCenterY &lt;= 350 &amp;&amp; ghostCenterX > 1218) {&#xD;
+        setX(13);&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKOZkB8GEeqG3PSd6EGpCA" name="Ghost" visibility="public" method="_HKeRMB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKT5IB8GEeqG3PSd6EGpCA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKWVYB8GEeqG3PSd6EGpCA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKZYsB8GEeqG3PSd6EGpCA" name="color" type="_HGGHgB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKam0B8GEeqG3PSd6EGpCA" name="maze" type="_HITG8B8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKccAB8GEeqG3PSd6EGpCA" name="gameManager" type="_HHdZcB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKgGYB8GEeqG3PSd6EGpCA" name="getRandomDirection" visibility="private" method="_HKmNAB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKgtcB8GEeqG3PSd6EGpCA" type="_HFWgoB8GEeqG3PSd6EGpCA" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKjwwB8GEeqG3PSd6EGpCA" name="exclude1" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKk-4B8GEeqG3PSd6EGpCA" name="exclude2" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKoCMB8GEeqG3PSd6EGpCA" name="getRandomBoolean" visibility="private" method="_HKpQUB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKopQB8GEeqG3PSd6EGpCA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKp3YB8GEeqG3PSd6EGpCA" name="getAnimation" visibility="public" method="_HKrFgB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKqecB8GEeqG3PSd6EGpCA" type="_HH9IsR8GEeqG3PSd6EGpCA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKrFgR8GEeqG3PSd6EGpCA" name="checkIftheresPathToGo" visibility="private" method="_HKsToB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKrskB8GEeqG3PSd6EGpCA" name="direction" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HKs6sB8GEeqG3PSd6EGpCA" name="moveUntilYouCant" visibility="private" method="_HK0PcR8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKthwB8GEeqG3PSd6EGpCA" name="whereToGo" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKv-AB8GEeqG3PSd6EGpCA" name="whereToChangeTo" type="_HFWgoB8GEeqG3PSd6EGpCA"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKwlEB8GEeqG3PSd6EGpCA" name="leftEdge">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKxMIB8GEeqG3PSd6EGpCA" name="topEdge">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKyaQB8GEeqG3PSd6EGpCA" name="rightEdge">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HKzoYB8GEeqG3PSd6EGpCA" name="bottomEdge">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HK0PcB8GEeqG3PSd6EGpCA" name="padding">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_6j0jABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HK2EoB8GEeqG3PSd6EGpCA" name="createAnimation" visibility="public" method="_HK2rsB8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HK2rsR8GEeqG3PSd6EGpCA" name="run" visibility="public" method="_HK2rsh8GEeqG3PSd6EGpCA"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HK3SwB8GEeqG3PSd6EGpCA" name="checkgdoor" visibility="public" method="_HK3SwR8GEeqG3PSd6EGpCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HLUlwB8GEeqG3PSd6EGpCA" name="Main" visibility="public">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLWa8B8GEeqG3PSd6EGpCA" name="game" specification="_HLVM0B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    // Parent root = FXMLLoader.load(getClass().getResource(&quot;sample.fxml&quot;));//&#xD;
+    Stage theStage = new Stage();&#xD;
+    theStage.setTitle(&quot;Pacman&quot;);&#xD;
+    Group root = new Group();&#xD;
+    Scene theScene = new Scene(root, setup.bg);&#xD;
+    theStage.setScene(theScene);&#xD;
+    Canvas canvas = new Canvas(1225, 600);&#xD;
+    root.getChildren().add(canvas);&#xD;
+    GameManager gameManager = new GameManager(root);&#xD;
+    gameManager.drawBoard();&#xD;
+    theScene.addEventHandler(KeyEvent.KEY_PRESSED,  event -> gameManager.movePacman(event));&#xD;
+    theScene.addEventHandler(KeyEvent.KEY_RELEASED,  event -> gameManager.stopPacman(event));&#xD;
+    theScene.addEventHandler(KeyEvent.KEY_PRESSED,  event -> gameManager.restartGame(event));&#xD;
+    theStage.show();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HLVM0B8GEeqG3PSd6EGpCA" name="game" visibility="public" isStatic="true" method="_HLWa8B8GEeqG3PSd6EGpCA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HL8Q0B8GEeqG3PSd6EGpCA" name="readscore" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_G97_Ih8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_G97YEB8IEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G98mMB8IEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G98mMR8IEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HMBwYB8GEeqG3PSd6EGpCA" name="Insert" specification="_HL9e8B8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    String pathname = new String();&#xD;
+    pathname = &quot;.\\sample\\scoreboard.txt&quot;;&#xD;
+    int line;&#xD;
+    ArrayList&lt;Integer> list = new ArrayList&lt;Integer>();&#xD;
+    int score = 0;&#xD;
+    //int index = 0;&#xD;
+    try (FileReader reader = new FileReader(pathname);&#xD;
+        // 建立一个对象&#xD;
+        BufferedReader br = new BufferedReader(reader)) {&#xD;
+        while ((line = br.read()) != -1) {&#xD;
+            if (line > 47 &amp;&amp; line &lt; 58) {&#xD;
+                score = score * 10 + (line - 48);&#xD;
+                while ((line = br.read()) > 47 &amp;&amp; line &lt; 58) {&#xD;
+                    score = score * 10 + (line - 48);&#xD;
+                }&#xD;
+            }&#xD;
+            list.add(score);&#xD;
+            score = 0;&#xD;
+        }&#xD;
+    } catch (IOException e) {&#xD;
+        e.printStackTrace();&#xD;
+    }&#xD;
+    return list;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HL9e8B8GEeqG3PSd6EGpCA" name="Insert" visibility="public" isStatic="true" method="_HMBwYB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HMBJUB8GEeqG3PSd6EGpCA" type="_HL-GAB8GEeqG3PSd6EGpCA" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HL-GAB8GEeqG3PSd6EGpCA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HMXHkB8GEeqG3PSd6EGpCA" name="setup" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HMY8wB8GEeqG3PSd6EGpCA" general="_HLUlwB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMg4kB8GEeqG3PSd6EGpCA" name="bgColor" visibility="private" type="_HMaK4R8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMitwB8GEeqG3PSd6EGpCA" name="wallColor" visibility="private" type="_HMaK4R8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMqpkB8GEeqG3PSd6EGpCA" name="btBack" visibility="private" type="_HMki8B8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMr3sB8GEeqG3PSd6EGpCA" name="Back" visibility="private" type="_HMki8B8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMu7AB8GEeqG3PSd6EGpCA" name="wall" visibility="private" isStatic="true" type="_HGGHgB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HMwwMB8GEeqG3PSd6EGpCA" name="bg" visibility="private" isStatic="true" type="_HGGHgB8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_rocNoh8HEeqG3PSd6EGpCA" name="startpage" type="_HNizUB8GEeqG3PSd6EGpCA" association="_robmkB8HEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rocNox8HEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rocNpB8HEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s58RwR8HEeqG3PSd6EGpCA" name="main" type="_HLUlwB8GEeqG3PSd6EGpCA" association="_s57qsB8HEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s58Rwh8HEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s58Rwx8HEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HM7vUB8GEeqG3PSd6EGpCA" name="back" specification="_HM4sAB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    btBack.setOnAction((ActionEvent e) -> {&#xD;
+        Stage now = (Stage) btBack.getScene().getWindow();&#xD;
+        now.close();&#xD;
+        wall = wallColor.getValue();&#xD;
+        bg = bgColor.getValue();&#xD;
+        game();&#xD;
+    });&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HM_ZsB8GEeqG3PSd6EGpCA" name="toStart" specification="_HM89cB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    Back.setOnAction((ActionEvent e) -> {&#xD;
+        Stage theStage = new Stage();&#xD;
+        AnchorPane root;&#xD;
+        try {&#xD;
+            root = (AnchorPane) FXMLLoader.load(getClass().getResource(&quot;sxcasd.fxml&quot;));&#xD;
+            Scene scene = new Scene(root);&#xD;
+            theStage.setScene(scene);&#xD;
+            theStage.setTitle(&quot;Setup&quot;);&#xD;
+            theStage.show();&#xD;
+            Stage now = (Stage) Back.getScene().getWindow();&#xD;
+            now.close();&#xD;
+        } catch (IOException e1) {&#xD;
+            e1.printStackTrace();&#xD;
+        }&#xD;
+    });&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HM4sAB8GEeqG3PSd6EGpCA" name="back" visibility="public" method="_HM7vUB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HM56IB8GEeqG3PSd6EGpCA" name="event" type="_HM0akB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HM89cB8GEeqG3PSd6EGpCA" name="toStart" visibility="public" method="_HM_ZsB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HM-yoB8GEeqG3PSd6EGpCA" name="event" type="_HM0akB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HNDEEB8GEeqG3PSd6EGpCA" name="StartGame" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HNJKsB8GEeqG3PSd6EGpCA" general="_HNE5QB8GEeqG3PSd6EGpCA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HNWmEB8GEeqG3PSd6EGpCA" name="start" specification="_HNP4YB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource(&quot;sxcasd.fxml&quot;));&#xD;
+    Scene scene = new Scene(root);&#xD;
+    //Button btStart = stp.getButton();&#xD;
+    theStage.setScene(scene);&#xD;
+    theStage.setTitle(&quot;Pacman&quot;);&#xD;
+    theStage.show();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HNeh4R8GEeqG3PSd6EGpCA" name="main" specification="_HNaQcB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    launch(args);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HNP4YB8GEeqG3PSd6EGpCA" name="start" visibility="public" method="_HNWmEB8GEeqG3PSd6EGpCA" raisedException="_HNRtkB8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HNRGgB8GEeqG3PSd6EGpCA" name="theStage" type="_HNKY0B8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HNaQcB8GEeqG3PSd6EGpCA" name="main" visibility="public" isStatic="true" method="_HNeh4R8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HNbekB8GEeqG3PSd6EGpCA" name="args" type="_HFWgoB8GEeqG3PSd6EGpCA">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HNdTwB8GEeqG3PSd6EGpCA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HNeh4B8GEeqG3PSd6EGpCA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HNizUB8GEeqG3PSd6EGpCA" name="startpage" visibility="public">
+          <generalization xmi:type="uml:Generalization" xmi:id="_HNkBcB8GEeqG3PSd6EGpCA" general="_HLUlwB8GEeqG3PSd6EGpCA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_HNlPkB8GEeqG3PSd6EGpCA" name="btStart" visibility="private" type="_HMki8B8GEeqG3PSd6EGpCA" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_n4qJMh8HEeqG3PSd6EGpCA" name="setup" type="_HMXHkB8GEeqG3PSd6EGpCA" association="_n4piIB8HEeqG3PSd6EGpCA">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n4qJMx8HEeqG3PSd6EGpCA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n4qwQB8HEeqG3PSd6EGpCA" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HNo58B8GEeqG3PSd6EGpCA" name="toStart" specification="_HNnEwB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    btStart.setOnAction((ActionEvent e) -> {&#xD;
+        Stage theStage = new Stage();&#xD;
+        AnchorPane root;&#xD;
+        try {&#xD;
+            root = (AnchorPane) FXMLLoader.load(getClass().getResource(&quot;color.fxml&quot;));&#xD;
+            Scene scene = new Scene(root);&#xD;
+            theStage.setScene(scene);&#xD;
+            theStage.setTitle(&quot;Setup&quot;);&#xD;
+            theStage.show();&#xD;
+            Stage now = (Stage) btStart.getScene().getWindow();&#xD;
+            now.close();&#xD;
+        } catch (IOException e1) {&#xD;
+            e1.printStackTrace();&#xD;
+        }&#xD;
+    });&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HNnEwB8GEeqG3PSd6EGpCA" name="toStart" visibility="public" method="_HNo58B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HNnr0B8GEeqG3PSd6EGpCA" name="event" type="_HM0akB8GEeqG3PSd6EGpCA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HNskUB8GEeqG3PSd6EGpCA" name="writescore" visibility="public">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HNyD4B8GEeqG3PSd6EGpCA" name="SortedFile" specification="_HNuZgB8GEeqG3PSd6EGpCA">
+            <language>JAVA</language>
+            <body>&#xD;
+    try {&#xD;
+        File writeName = new File(&quot;.\\\\sample\\\\scoreboard.txt&quot;);&#xD;
+        writeName.createNewFile();&#xD;
+        try (FileWriter writer = new FileWriter(writeName);&#xD;
+            BufferedWriter out = new BufferedWriter(writer)) {&#xD;
+            for (int i = 0; i &lt; array.size(); i++) {&#xD;
+                out.write(array.get(i) + &quot;,&quot;);&#xD;
+            }&#xD;
+            out.flush();&#xD;
+        }&#xD;
+    } catch (IOException e) {&#xD;
+        e.printStackTrace();&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_HNuZgB8GEeqG3PSd6EGpCA" name="SortedFile" visibility="public" isStatic="true" method="_HNyD4B8GEeqG3PSd6EGpCA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_HNwOsB8GEeqG3PSd6EGpCA" name="array">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_ILxaUPaLEeW5KOK8aDMdgA"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HNw1wB8GEeqG3PSd6EGpCA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HNxc0B8GEeqG3PSd6EGpCA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_PGy8oB8IEeqG3PSd6EGpCA" client="_HLUlwB8GEeqG3PSd6EGpCA" supplier="_G9N4UB8GEeqG3PSd6EGpCA"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SoKKkB8IEeqG3PSd6EGpCA" client="_HLUlwB8GEeqG3PSd6EGpCA" supplier="_HHdZcB8GEeqG3PSd6EGpCA"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ucw7wB8IEeqG3PSd6EGpCA" client="_HLUlwB8GEeqG3PSd6EGpCA" supplier="_HITG8B8GEeqG3PSd6EGpCA"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VivFUB8IEeqG3PSd6EGpCA" client="_HNDEEB8GEeqG3PSd6EGpCA" supplier="_HNizUB8GEeqG3PSd6EGpCA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_G9QUkB8GEeqG3PSd6EGpCA" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_G9Sw0B8GEeqG3PSd6EGpCA" name="javafx">
+        <packagedElement xmi:type="uml:Package" xmi:id="_G9T-8B8GEeqG3PSd6EGpCA" name="scene">
+          <packagedElement xmi:type="uml:Package" xmi:id="_G9V0IB8GEeqG3PSd6EGpCA" name="shape">
+            <packagedElement xmi:type="uml:Class" xmi:id="_G9XpUB8GEeqG3PSd6EGpCA" name="Rectangle"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HGcFwB8GEeqG3PSd6EGpCA" name="Circle"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_HGESUB8GEeqG3PSd6EGpCA" name="paint">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HGGHgB8GEeqG3PSd6EGpCA" name="Color"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HHi5AB8GEeqG3PSd6EGpCA" name="Group"/>
+          <packagedElement xmi:type="uml:Package" xmi:id="_HI6yAB8GEeqG3PSd6EGpCA" name="input">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HI7ZEB8GEeqG3PSd6EGpCA" name="KeyEvent"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_HMH3AB8GEeqG3PSd6EGpCA" name="text">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HMIeEB8GEeqG3PSd6EGpCA" name="Text"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_HMaK4B8GEeqG3PSd6EGpCA" name="control">
+            <packagedElement xmi:type="uml:Class" xmi:id="_HMaK4R8GEeqG3PSd6EGpCA" name="ColorPicker"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_HMki8B8GEeqG3PSd6EGpCA" name="Button"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_HH9IsB8GEeqG3PSd6EGpCA" name="animation">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HH9IsR8GEeqG3PSd6EGpCA" name="AnimationTimer"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_HMzzgB8GEeqG3PSd6EGpCA" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HM0akB8GEeqG3PSd6EGpCA" name="ActionEvent"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_HNESMB8GEeqG3PSd6EGpCA" name="application">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HNE5QB8GEeqG3PSd6EGpCA" name="Application"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_HNJxwB8GEeqG3PSd6EGpCA" name="stage">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HNKY0B8GEeqG3PSd6EGpCA" name="Stage"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_HCL34B8GEeqG3PSd6EGpCA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_HFVSgB8GEeqG3PSd6EGpCA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_HFV5kB8GEeqG3PSd6EGpCA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HFWgoB8GEeqG3PSd6EGpCA" name="String"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_HJ4bUB8GEeqG3PSd6EGpCA" name="Runnable"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_HNRtkB8GEeqG3PSd6EGpCA" name="Exception"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_HHufMB8GEeqG3PSd6EGpCA" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_HHvtUB8GEeqG3PSd6EGpCA" name="Set"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n4piIB8HEeqG3PSd6EGpCA" memberEnd="_n4qJMh8HEeqG3PSd6EGpCA _n4qwQR8HEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n4qJMB8HEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_n4qJMR8HEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_n4qwQR8HEeqG3PSd6EGpCA" name="startpage" type="_HNizUB8GEeqG3PSd6EGpCA" association="_n4piIB8HEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_robmkB8HEeqG3PSd6EGpCA" memberEnd="_rocNoh8HEeqG3PSd6EGpCA _rocNpR8HEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rocNoB8HEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rocNoR8HEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_rocNpR8HEeqG3PSd6EGpCA" name="setup" type="_HMXHkB8GEeqG3PSd6EGpCA" association="_robmkB8HEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s57qsB8HEeqG3PSd6EGpCA" memberEnd="_s58RwR8HEeqG3PSd6EGpCA _s58RxB8HEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s57qsR8HEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s58RwB8HEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_s58RxB8HEeqG3PSd6EGpCA" name="setup" type="_HMXHkB8GEeqG3PSd6EGpCA" association="_s57qsB8HEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wWdb8B8HEeqG3PSd6EGpCA" memberEnd="_wWeDAR8HEeqG3PSd6EGpCA _wWeDBB8HEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wWdb8R8HEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wWeDAB8HEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wWeDBB8HEeqG3PSd6EGpCA" name="barobstacle" type="_G9N4UB8GEeqG3PSd6EGpCA" association="_wWdb8B8HEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AguEEB8IEeqG3PSd6EGpCA" memberEnd="_AgurIh8IEeqG3PSd6EGpCA _AgurJR8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AgurIB8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AgurIR8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AgurJR8IEeqG3PSd6EGpCA" name="ghost" type="_HJ0w8B8GEeqG3PSd6EGpCA" association="_AguEEB8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_C8SHkB8IEeqG3PSd6EGpCA" memberEnd="_C8SHkx8IEeqG3PSd6EGpCA _C8Suoh8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C8SHkR8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C8SHkh8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_C8Suoh8IEeqG3PSd6EGpCA" name="cookie" type="_HGaQkB8GEeqG3PSd6EGpCA" association="_C8SHkB8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DwX28B8IEeqG3PSd6EGpCA" memberEnd="_DwYeAh8IEeqG3PSd6EGpCA _DwZFEB8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DwYeAB8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DwYeAR8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DwZFEB8IEeqG3PSd6EGpCA" name="pacman" type="_HHgcwB8GEeqG3PSd6EGpCA" association="_DwX28B8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G97YEB8IEeqG3PSd6EGpCA" memberEnd="_G97_Ih8IEeqG3PSd6EGpCA _G98mMh8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G97_IB8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_G97_IR8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_G98mMh8IEeqG3PSd6EGpCA" name="readscore" type="_HL8Q0B8GEeqG3PSd6EGpCA" association="_G97YEB8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Hprq0B8IEeqG3PSd6EGpCA" memberEnd="_HpsR4h8IEeqG3PSd6EGpCA _HpsR5R8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HpsR4B8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HpsR4R8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HpsR5R8IEeqG3PSd6EGpCA" name="gamemanager" type="_HHdZcB8GEeqG3PSd6EGpCA" association="_Hprq0B8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fEkA4B8IEeqG3PSd6EGpCA" memberEnd="_fEkn8h8IEeqG3PSd6EGpCA _fElPAh8IEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fEkn8B8IEeqG3PSd6EGpCA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fEkn8R8IEeqG3PSd6EGpCA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fElPAh8IEeqG3PSd6EGpCA" name="score" type="_HIbCwB8GEeqG3PSd6EGpCA" association="_fEkA4B8IEeqG3PSd6EGpCA"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G4meEB8GEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G4qvgB8GEeqG3PSd6EGpCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G5OJIB8GEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G8SrQB8GEeqG3PSd6EGpCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G8gGoB8GEeqG3PSd6EGpCA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G8h70B8GEeqG3PSd6EGpCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_HBnQIB8GEeqG3PSd6EGpCA" name="javafx.scene.shape.Rectangle" base_Classifier="_G9XpUB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HFaLAB8GEeqG3PSd6EGpCA" name="java.lang.String" base_Classifier="_HFWgoB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HFkjEB8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HFeccB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HGKY8B8GEeqG3PSd6EGpCA" name="javafx.scene.paint.Color" base_Classifier="_HGGHgB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HGfwIB8GEeqG3PSd6EGpCA" name="javafx.scene.shape.Circle" base_Classifier="_HGcFwB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HGo6EB8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HGl2wB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HHoYkB8GEeqG3PSd6EGpCA" name="javafx.scene.Group" base_Classifier="_HHi5AB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HHz-wB8GEeqG3PSd6EGpCA" name="java.util.Set" base_Classifier="_HHvtUB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HH_k8B8GEeqG3PSd6EGpCA" name="javafx.animation.AnimationTimer" base_Classifier="_HH9IsR8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HIrhcB8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HImo8B8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HI_qgB8GEeqG3PSd6EGpCA" name="javafx.scene.input.KeyEvent" base_Classifier="_HI7ZEB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HJ8FsB8GEeqG3PSd6EGpCA" name="java.lang.Runnable" base_Classifier="_HJ4bUB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HKQ10B8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HKOZkB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HLoHwB8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HLjPQB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HL08EB8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HLyf0R8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HL_7MB8GEeqG3PSd6EGpCA" name="ArrayList" base_Classifier="_HL-GAB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HMK6UB8GEeqG3PSd6EGpCA" name="javafx.scene.text.Text" base_Classifier="_HMIeEB8GEeqG3PSd6EGpCA"/>
+  <standard:Create xmi:id="_HMQZ4B8GEeqG3PSd6EGpCA" base_BehavioralFeature="_HMN9oR8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HMd1QB8GEeqG3PSd6EGpCA" name="javafx.scene.control.ColorPicker" base_Classifier="_HMaK4R8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HMnmQB8GEeqG3PSd6EGpCA" name="javafx.scene.control.Button" base_Classifier="_HMki8B8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HM220B8GEeqG3PSd6EGpCA" name="javafx.event.ActionEvent" base_Classifier="_HM0akB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HNGucB8GEeqG3PSd6EGpCA" name="javafx.application.Application" base_Classifier="_HNE5QB8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HNM1EB8GEeqG3PSd6EGpCA" name="javafx.stage.Stage" base_Classifier="_HNKY0B8GEeqG3PSd6EGpCA"/>
+  <PapyrusJava:External xmi:id="_HNUw4B8GEeqG3PSd6EGpCA" name="java.lang.Exception" base_Classifier="_HNRtkB8GEeqG3PSd6EGpCA"/>
+</xmi:XMI>
